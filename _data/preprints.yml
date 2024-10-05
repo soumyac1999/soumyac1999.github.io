@@ -1,0 +1,19 @@
+- title: Resources and Evaluations for Multi-Distribution Dense Information Retrieval
+  authors: __Soumya Chatterjee__, Omar Khattab, Simran Arora
+  venue: Retrieval-Enhanced Machine Learning (REML) Workshop at SIGIR 2023
+  year: 2023
+  paper: https://arxiv.org/abs/2306.12601
+  pdf: https://arxiv.org/pdf/2306.12601.pdf
+  arxiv: https://arxiv.org/abs/2306.12601
+  slides: NULL
+  code: https://github.com/stanfordnlp/multi-distribution-retrieval
+  img: images/reml.png
+- title: Matching options to tasks using Option-Indexed Hierarchical Reinforcement Learning
+  authors: Kushal Chauhan, __Soumya Chatterjee__, Akash Reddy, Balaraman Ravindran, Pradeep Shenoy
+  venue: NeurIPS 2021 Workshop on Ecological Theory of Reinforcement Learning
+  year: 2022
+  paper: https://arxiv.org/abs/2206.05750
+  pdf: https://arxiv.org/pdf/2206.05750.pdf
+  arxiv: https://arxiv.org/abs/2206.05750
+  slides: NULL
+  img: images/oihrl.png

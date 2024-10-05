@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+	{% seo %}
+    </head>
+    
+    <body>
+        <script>
+        // localStorage.dark_mode = 0;
+        if(parseInt(localStorage.dark_mode) == 1 || (localStorage.dark_mode == null && window.matchMedia('(prefers-color-scheme: dark)').matches)){
+            document.body.classList.add("dark");
+        }
+        </script>
+
+        <div class="container page" style="padding-top: 40px;">
+            {{ content }}
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>

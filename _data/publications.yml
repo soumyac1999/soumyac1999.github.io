@@ -1,0 +1,45 @@
+# To Do - Autogenerate from google scholar bibtex
+- title: Accurate Online Posterior Alignments for Principled Lexically-Constrained Decoding
+  authors: __Soumya Chatterjee__, Sunita Sarawagi, Preethi Jyothi
+  venue: Annual Meeting of the Association for Computational Linguistics (__ACL__), 2022
+  year: 2022
+  paper: https://aclanthology.org/2022.acl-long.460/
+  pdf: https://arxiv.org/pdf/2204.00871.pdf
+  arxiv: https://arxiv.org/abs/2204.00871
+  slides: files/presentation.pdf
+  img: images/postaln.png
+- title: Meta-Learning of Dynamic Policy Adjustments in Inhibitory Control Tasks
+  authors: __Soumya Chatterjee__\*, Aakriti Kumar\*, Pradeep Shenoy
+  venue: Annual Meeting of the Cognitive Science Society (__CogSci__), 2022
+  year: 2022
+  img: images/reliability.png
+  paper: https://escholarship.org/uc/item/0h68d9qx
+  pdf: https://escholarship.org/content/qt0h68d9qx/qt0h68d9qx.pdf
+- title: Joint Learning of Hyperbolic Label Embeddings for Hierarchical Multi-label Classification
+  authors: __Soumya Chatterjee__\*, Ayush Maheshwari\*, Ganesh Ramakrishnan, J. Saketha Nath
+  venue: European Chapter of the Association for Computational Linguistics (__EACL__), 2021
+  year: 2021
+  paper: https://aclanthology.org/2021.eacl-main.247/
+  pdf: https://arxiv.org/pdf/2101.04997.pdf
+  arxiv: https://arxiv.org/abs/2101.04997
+  code: https://github.com/soumyac1999/hyperbolic-label-emb-for-hmc
+  img: images/eacl21.png
+- title: Model-agnostic Fits for Understanding Information Seeking Patterns in Humans
+  authors: __Soumya Chatterjee__, Pradeep Shenoy
+  venue: AAAI Conference on Artificial Intelligence (__AAAI__), 2021
+  year: 2021
+  paper: https://ojs.aaai.org/index.php/AAAI/article/view/16160
+  pdf: https://arxiv.org/pdf/2012.04858.pdf
+  arxiv: https://arxiv.org/abs/2012.04858
+  slides: files/aaai21/presentation.pdf
+  code: https://github.com/soumyac1999/infoseek
+  img: images/infoseek.png
+- title: Thermal Face Recognition Based on Transformation by Residual U-Net and Pixel Shuffle Upsampling
+  authors: __Soumya Chatterjee__, Wei-Ta Chu
+  venue: International Conference on Multimedia Modeling (MMM), 2020
+  year: 2020
+  paper: https://link.springer.com/chapter/10.1007/978-3-030-37731-1_55
+  pdf: /files/thermal_face.pdf
+  arxiv: NULL
+  code: NULL
+  img: images/thermal_face_pub.png

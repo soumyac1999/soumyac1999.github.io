@@ -1,0 +1,144 @@
+---
+layout: base
+title: Soumya Chatterjee
+---
+
+<div class="row my-3 py-md-3 justify-content-center">
+	<div class="col-12 col-sm-8">
+		<h2 class="section-header"> Soumya Chatterjee </h4>
+		<p class="mb-0 text-muted pb-3">soumyac [at] stanford.edu</p>
+		<img style="float: right; width: 35%; padding: 6px;" class="d-sm-none" src="https://avatars.githubusercontent.com/u/33203398?v=4">
+		{% capture about %}{% include_relative about.md %}{% endcapture %}
+		{{ about | markdownify }}
+		<div style="margin-bottom: 20px;">
+			<a href="resume.pdf"><i class="ai ai-cv-square icon"></i></a>
+			<a rel="noreferrer" href="https://scholar.google.com/citations?user=Zz1XFQ4AAAAJ"><i
+					class="ai ai-google-scholar-square icon"></i> </a>
+			<a rel="noreferrer" href="https://in.linkedin.com/in/soumyach"><i class="fab fa-linkedin icon"></i></a>
+			<a rel="noreferrer" href="https://github.com/soumyac1999"><i class="fab fa-github icon"></i></a>
+			<a rel="noreferrer" href="mailto:soumyac@stanford.edu"><i class="fas fa-envelope icon"></i></a>
+		</div>
+	</div>
+	<div class="col-8 col-sm-4 align-self-center d-none d-sm-block">
+		<div style="width: 95%; background-color: rgba(255, 255, 255, 0.1)" class="border rounded">
+			<img class="rounded" src="https://avatars.githubusercontent.com/u/33203398?v=4" style="width:100%">
+		</div>
+	</div>
+</div>
+
+<div class="row pt-2 mt-3">
+	<div class="col-12">
+		<h4 class="section-header"> Updates </h4>
+		<hr>
+	</div>
+</div>
+<div class="updates container-fluid p-1 col-12 mb-2">
+	{% for item in site.data.updates %}
+	<div class="row mb-2">
+		<div class="col-2 col-lg-1 mr-2"> 
+			<span class="badge" style="width: 6em; transition: none; --webkit-transition: none;"> {{ item.date }} </span>
+		</div>
+		<div class="col-12 col-lg-10">
+			{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }} 
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="row mt-5">
+	<div class="col-12">
+		<h4 class="section-header" id="pubs"> Publications </h4>
+		<hr>
+	</div>
+</div>
+<div class="pubs container-fluid p-1 col-12 pb-2">
+	{% for item in site.data.publications %}
+	<div class="row mb-2 year-{{ item.year }} align-items-center">
+		<div class="col-0 col-md-3">
+			{% if item.img != NULL %}
+			<img src="{{ item.img }}" class="rounded align-self-center d-none d-md-block" style="width: 100%">
+			{% endif %}
+		</div>
+		<div class="col-12 col-md-9 py-2 px-2 pr-3">
+			<a class="pub-title" href="{{ item.paper }}"> {{ item.title }} </a>
+			<div class="pub-metadata">
+				<span class="authors"> {{ item.authors | markdownify | remove: '<p>' | remove: '</p>' }} </span>
+				<br>
+				<span class="venue"><i> {{ item.venue | markdownify | remove: '<p>' | remove: '</p>' }} </i></span>
+			</div>
+			<div class="pub-links pt-0">
+				{% if item.paper != NULL %}
+				<a href="{{ item.paper }}">paper</a>					
+				{% endif %}
+				{% if item.arxiv != NULL %}
+				{% if item.paper != NULL %}
+				/
+				{% endif %}
+				<a href="{{ item.arxiv }}">arXiv</a>					
+				{% endif %}
+				{% if item.slides != NULL %}
+				{% if item.arxiv != NULL or item.paper != NULL %}
+				/
+				{% endif %}
+				<a href="{{ item.slides }}">slides</a>					
+				{% endif %}
+				{% if item.code != NULL %}
+				{% if item.slides != NULL or item.paper != NULL or item.arxiv != NULL%}
+				/
+				{% endif %}
+				<a href="{{ item.code }}">code</a>					
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="row mt-1">
+	<div class="col-12">
+		<h5 class="section-header pubs"> Workshop Papers </h5>
+	</div>
+</div>
+<div class="pubs container-fluid p-1 col-12 pb-2">
+	{% for item in site.data.preprints %}
+	<div class="row mb-2 year-{{ item.year }} align-items-center">
+		<div class="col-0 col-md-3">
+			{% if item.img != NULL %}
+			<img src="{{ item.img }}" class="rounded align-self-center d-none d-md-block" style="width: 100%">
+			{% endif %}
+		</div>
+		<div class="col-12 col-md-9 py-2 px-2 pr-3">
+			<a class="pub-title" href="{{ item.paper }}"> {{ item.title }} </a>
+			<div class="pub-metadata">
+				<span class="authors"> {{ item.authors | markdownify | remove: '<p>' | remove: '</p>' }} </span>
+				<br>
+				<span class="venue"><i> {{ item.venue | markdownify | remove: '<p>' | remove: '</p>' }} </i></span>
+			</div>
+			<div class="pub-links pt-0">
+				{% if item.paper != NULL %}
+				<a href="{{ item.paper }}">paper</a>					
+				{% endif %}
+				{% if item.arxiv != NULL %}
+				{% if item.paper != NULL %}
+				/
+				{% endif %}
+				<a href="{{ item.arxiv }}">arXiv</a>					
+				{% endif %}
+				{% if item.slides != NULL %}
+				{% if item.arxiv != NULL or item.paper != NULL %}
+				/
+				{% endif %}
+				<a href="{{ item.slides }}">slides</a>					
+				{% endif %}
+				{% if item.code != NULL %}
+				{% if item.slides != NULL or item.paper != NULL or item.arxiv != NULL%}
+				/
+				{% endif %}
+				<a href="{{ item.code }}">code</a>					
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<div class="my-5"></div>

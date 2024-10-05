@@ -1,0 +1,24 @@
+title: Soumya Chatterjee
+tagline: MS CS Student at Stanford
+description: I am a Master’s student in Computer Science at Stanford University. Previously, I was a Pre-Doctoral Researcher at Google Research. I graduated from IIT Bombay with B.Tech in Computer Science and a Minor in Statistics.
+baseurl: ""
+url: "https://soumyac1999.github.io"
+twitter:
+  card: summary
+  title: Soumya Chatterjee
+  site: "@soumyachat"
+  username: soumyachat
+social:
+  name: Soumya Chatterjee
+  links:
+    - https://twitter.com/soumyachat
+    - https://www.linkedin.com/in/soumyach/
+    - https://github.com/soumyac1999
+    - https://scholar.google.com/citations?user=Zz1XFQ4AAAAJ
+locale: en_US
+
+markdown: kramdown
+exclude: ["images_src/*", "about.md", "*.sh", "README.md"]
+
+plugins:
+  - jekyll-seo-tag
